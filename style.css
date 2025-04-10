@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{margin: 0}
+
+
+header{
+    height: 100px;
+    background-color: aliceblue;
+}
+
+.adotar{ 
+    color: #f97316;
+} /* botao seja colaborador */
+
+nav ul li{
+    display: inline;
+    float: right;
+    margin: 10px;
+    cursor: pointer;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #1F2937;
+}
+li{
+    display: inline-block;
+    position: relative;
+    color: #1F2937;
+    cursor: pointer;
+    transition: 0.45s all ease;
+}
+
+li:hover{
+    color: #f97316;
+    transition: 0.45s all ease ;
+}
+
+li::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #f97316;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+
+li:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+body{
+    background-color: #CED4DA;
+    margin: 0;
+    font-family: poppins;
+}
+h1{
+    text-align: center;
+}
+
+.parafragopinc{
+    text-align: center;
+    width: 90%;
+}
+
+.estadoss{
+    cursor: pointer;
+}
+footer{
+    background-color: #1F2937;
+    color:  rgb(241, 243, 245);
+    height: 6em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+button{
+    background-color: #f97316;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    width: 95%;
+    height: 35px;
+    margin: auto;
+}
+input{
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    padding: 0.6px;
+    border: 1.5px solid #1F2937;
+    border-radius: 5px;
+    margin: 8px;
+
+}
+
+.Conteiner{
+    background-color: aliceblue;
+    width: 80%;
+    margin: auto;
+    border-radius: 20px;
+    padding: 20px;
+}
+.patacerta{
+    text-align: left;
+    padding: 40px;
+    
+}
+
+.endinfor{
+    margin: 20px 0px;
+    
+}
+
